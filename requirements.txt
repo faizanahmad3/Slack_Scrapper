@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+python-dotenv
+slack-sdk
+qdrant-client
+langchain
+langchain-community
+langchain-openai
+openai
+httpx
+tiktoken
