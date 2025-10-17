@@ -577,43 +577,6 @@ Same process applies for embedding providers!
 
 ---
 
-## 🐛 Troubleshooting
-
-### Issue: "SLACK_BOT_TOKEN is required"
-
-**Solution:** Ensure `.env` file exists with valid `SLACK_BOT_TOKEN=xoxb-...`
-
-### Issue: "Channel not found: xyz"
-
-**Solutions:**
-1. Verify channel name is correct (no `#` prefix)
-2. Ensure bot is invited to the channel: `/invite @BotName`
-3. Check bot has required scopes
-
-### Issue: "Connection refused to Qdrant"
-
-**Solution:** Start Qdrant:
-```bash
-docker run -p 6333:6333 qdrant/qdrant:latest
-```
-
-### Issue: Incremental update not finding new messages
-
-**Check logs for:**
-```
-========== INCREMENTAL UPDATE MODE ==========
-  Last processed timestamp: ...
-```
-
-**Solutions:**
-1. Verify new messages exist after the timestamp
-2. Try force refresh: `"force_full_refresh": true`
-3. Check `ingestion_metadata.json` for correct timestamp
-
-### Issue: "Unsupported value: 'temperature'"
-
-**Solution:** Your LLM model doesn't support the temperature parameter. It's already removed from OpenAI provider. If using custom provider, ensure it doesn't set temperature.
-
 ### Viewing Detailed Logs
 
 Logs show:
@@ -675,4 +638,4 @@ For issues or questions:
 
 ---
 
-**Built with ❤️ using FastAPI, LangChain, Qdrant, and OpenAI**
+**Built with using FastAPI, LangChain, Qdrant, and OpenAI**
