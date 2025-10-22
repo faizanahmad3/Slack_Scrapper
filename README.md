@@ -587,9 +587,9 @@ Logs show:
 
 Example:
 ```
-2025-10-16 02:17:10 - app.pipelines.ingest:53 - INFO - ========== INGESTING 2 NEW MESSAGES ==========
-2025-10-16 02:17:10 - app.pipelines.ingest:59 - INFO -   [1] ts=1760562700.123456, user=U09MJQBCGV6, text='New deployment completed'
-2025-10-16 02:17:10 - app.pipelines.ingest:59 - INFO -   [2] ts=1760562800.234567, user=U09LMEQDQ3X, text='All tests passing'
+2025-10-22 02:17:10 - app.pipelines.ingest:53 - INFO - ========== INGESTING 2 NEW MESSAGES ==========
+2025-10-22 02:17:10 - app.pipelines.ingest:59 - INFO -   [1] ts=1760562700.123456, user=U09MJQBCGV6, text='New deployment completed'
+2025-10-22 02:17:10 - app.pipelines.ingest:59 - INFO -   [2] ts=1760562800.234567, user=U09LMEQDQ3X, text='All tests passing'
 ```
 
 ---
@@ -613,29 +613,14 @@ Example:
 
 ---
 
-## 📝 License
-
-MIT License - feel free to use in your projects!
-
----
-
-## 🤝 Contributing
-
-Contributions welcome! Please:
-1. Fork the repository
-2. Create a feature branch
-3. Add tests if applicable
-4. Submit a pull request
-
----
-
-## 📧 Support
-
-For issues or questions:
-- Check logs with line numbers for debugging
-- Review troubleshooting section
-- Open an issue on GitHub
-
----
-
 **Built with using FastAPI, LangChain, Qdrant, and OpenAI**
+
+## DEMO RUN RESULTS
+
+- Please see the snapshots below for DEMO run results. I setup a chaneel in my personal slack. I didn't do it on intuit channels as I was facing SSL certificate error while making connection to it. Also I didn't had LLM API key and had to go through some blockers on dev portal to get that. To accelerate the development, I used my personal slack and a demo open AI api key. The only change a person needs to make is add slack key and llm api key in env file. 
+
+![Pasted image.png](Pasted%20image.png)
+![Pasted image 1.png](Pasted%20image%201.png)
+![Pasted image 2.png](Pasted%20image%202.png)
+![Screenshot from 2025-10-22 12-59-56.png](Screenshot%20from%202025-10-22%2012-59-56.png)
+![Screenshot from 2025-10-22 13-00-38.png](Screenshot%20from%202025-10-22%2013-00-38.png)
